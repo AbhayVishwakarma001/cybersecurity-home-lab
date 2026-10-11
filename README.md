@@ -6,7 +6,11 @@ Hands-on cybersecurity home lab for Linux, networking, security testing, automat
 
 ## What's in this repo
 
-- `tools/failed-login-detector/` : Python script that parses an authentication log and flags failed login attempts, with a sample log for testing.
+- `tools/failed-login-detector/` : Python script that parses an SSH-style auth log, counts failed password attempts per source IP, and flags IPs with 4 or more failures. Includes a sample log.
+
+## Usage
+
+python tools/failed-login-detector/failed_login_parser.py
 
 ## Planned
 
